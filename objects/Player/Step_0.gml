@@ -1,27 +1,4 @@
-
-move_speed = 40;
-
-if (point_distance(x, y, obj_mirror.x, obj_mirror.y) < 200){
-	rem_up_counter -= 1
-	if (rem_up_counter = 0){
-		rem += 2
-		if (rem < 5 || rem > 95){
-			game_end()
-		}
-		rem_color()
-		rem_up_counter = 50
-	}
-} else {
-	rem_drop_counter -= 1
-	if (rem_drop_counter = 0){
-		rem -= 1
-		if (rem < 5 || rem > 95){
-			game_end()
-		}
-		rem_color()
-		rem_drop_counter = 100
-	}
-}
+move_speed = 3;
 
 var _right = keyboard_check(vk_right)
 var _left = keyboard_check(vk_left)
@@ -40,10 +17,35 @@ if (_left) {
 	image_xscale = 0.75
 }
 
-
-if (_input_x != 0 || _input_y != 0) {
-    // Get the angle of movement
-    var _dir = point_direction(0, 0, _input_x, _input_y);
-
-	move_and_collide(_move_x, _move_y, obj_wall)
+if (_move_x != 0) {
+    var _box = instance_place(x + _move_x, y, obj_box);
+    if (_box != noone) {
+        with (_box) {
+            if (!place_meeting(x + _move_x, y, obj_wall)) {
+                x += _move_x;
+            } else {
+                _move_x = 0;
+            }
+        }
+    } else if (place_meeting(x + _move_x, y, obj_wall)) {
+        _move_x = 0;
+    }
+    x += _move_x;
 }
+
+if (_move_y != 0) {
+    var _box = instance_place(x, y + _move_y, obj_box);
+    if (_box != noone) {
+        with (_box) {
+            if (!place_meeting(x, y + _move_y, obj_wall)) {
+                y += _move_y;
+            } else {
+                _move_y = 0;
+            }
+        }
+    } else if (place_meeting(x, y + _move_y, obj_wall)) {
+        _move_y = 0;
+    }
+    y += _move_y;
+}	
+

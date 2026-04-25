@@ -15,11 +15,11 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2024.1400.5.1052",
   },
   "name":"SLEEPOVER.",
   "resources":[
-    {"id":{"name":"obj_mirror","path":"objects/obj_mirror/obj_mirror.yy",},},
+    {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
