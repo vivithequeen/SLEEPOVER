@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"godot",
-    "path":"sprites/godot/godot.yy",
+    "name":"box",
+    "path":"sprites/box/box.yy",
   },
   "spriteMaskId":null,
   "tags":[

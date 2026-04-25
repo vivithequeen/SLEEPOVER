@@ -30,10 +30,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"godot",
-    "path":"sprites/godot/godot.yy",
+    "name":"button",
+    "path":"sprites/button/button.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"button",
+    "path":"sprites/button/button.yy",
+  },
   "tags":[
     "random",
   ],
