@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Player",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_box",
+  "eventList":[],
   "managed":true,
-  "name":"Player",
+  "name":"obj_box",
   "overriddenProperties":[],
   "parent":{
     "name":"SLEEPOVER.",
@@ -25,9 +23,9 @@
   "physicsShape":1,
   "physicsShapePoints":[
     {"x":0.0,"y":0.0,},
-    {"x":255.0,"y":0.0,},
-    {"x":255.0,"y":255.0,},
-    {"x":0.0,"y":255.0,},
+    {"x":64.0,"y":0.0,},
+    {"x":64.0,"y":64.0,},
+    {"x":0.0,"y":64.0,},
   ],
   "physicsStartAwake":true,
   "properties":[],
@@ -35,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"bean",
-    "path":"sprites/bean/bean.yy",
+    "name":"godot",
+    "path":"sprites/godot/godot.yy",
   },
   "spriteMaskId":null,
   "visible":true,
