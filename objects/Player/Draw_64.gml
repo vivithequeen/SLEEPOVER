@@ -1,0 +1,1 @@
+draw_sprite_stretched(REM_bar, rem_frame, rem_bar_x, rem_bar_y, (rem/rem_max)*rem_bar_width, rem_bar_height)
