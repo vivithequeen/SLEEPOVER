@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Blink",
+  "%Name":"try_push",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Blink",
+  "name":"try_push",
   "parent":{
     "name":"scripts",
     "path":"folders/scripts.yy",

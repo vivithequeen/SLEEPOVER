@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
+  "%Name":"obj_door",
   "eventList":[],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_door",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -26,14 +26,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"godot",
-    "path":"sprites/godot/godot.yy",
+    "name":"door",
+    "path":"sprites/door/door.yy",
   },
-  "spriteMaskId":{
-    "name":"godot",
-    "path":"sprites/godot/godot.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

@@ -15,12 +15,8 @@ var _move_y = _input_y * move_speed
 if (_move_x != 0) {
     var _box = instance_place(x + _move_x, y, obj_box);
     if (_box != noone) {
-        with (_box) {
-            if (!place_meeting(x + _move_x, y, obj_wall)) {
-                x += _move_x;
-            } else {
-                _move_x = 0;
-            }
+        if (!try_push(_box, _move_x, 0)) {
+            _move_x = 0;
         }
     } else if (place_meeting(x + _move_x, y, obj_wall)) {
         _move_x = 0;
@@ -31,12 +27,8 @@ if (_move_x != 0) {
 if (_move_y != 0) {
     var _box = instance_place(x, y + _move_y, obj_box);
     if (_box != noone) {
-        with (_box) {
-            if (!place_meeting(x, y + _move_y, obj_wall)) {
-                y += _move_y;
-            } else {
-                _move_y = 0;
-            }
+        if (!try_push(_box, 0, _move_y)) {
+            _move_y = 0;
         }
     } else if (place_meeting(x, y + _move_y, obj_wall)) {
         _move_y = 0;

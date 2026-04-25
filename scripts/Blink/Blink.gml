@@ -16,19 +16,24 @@ function Blink(){
 	}
 	//swap locations
 	var _len = array_length(_instances_with_tag);
-	for(var i = 0; i < _len; i++)
-	{
+	for (var i = 0; i < _len; i++) {
 		var a = irandom_range(0, _len - 1);
 		var b = irandom_range(0, _len - 1);
+		if (a == b) continue;
 
-		var a_x = _instances_with_tag[a].x;
-		var a_y = _instances_with_tag[a].y;
+		var _ax = _instances_with_tag[a].x;
+		var _ay = _instances_with_tag[a].y;
+		var _bx = _instances_with_tag[b].x;
+		var _by = _instances_with_tag[b].y;
 
-		_instances_with_tag[a].x = _instances_with_tag[b].x;
-		_instances_with_tag[a].y = _instances_with_tag[b].y;
+		var _a_safe = !instance_place(_bx, _by, Player);
+		var _b_safe = !instance_place(_ax, _ay, Player);
+		if (!_a_safe || !_b_safe) continue;
 
-		_instances_with_tag[b].x = a_x;
-		_instances_with_tag[b].y = a_y;
+		_instances_with_tag[a].x = _bx;
+		_instances_with_tag[a].y = _by;
+		_instances_with_tag[b].x = _ax;
+		_instances_with_tag[b].y = _ay;
 	}
 }
 

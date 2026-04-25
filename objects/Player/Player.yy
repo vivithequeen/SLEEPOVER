@@ -9,8 +9,8 @@
   "name":"Player",
   "overriddenProperties":[],
   "parent":{
-    "name":"SLEEPOVER.",
-    "path":"SLEEPOVER..yyp",
+    "name":"objects",
+    "path":"folders/objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
