@@ -37,5 +37,8 @@
     "path":"sprites/godot/godot.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "random",
+  ],
   "visible":true,
 }

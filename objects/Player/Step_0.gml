@@ -12,7 +12,6 @@ var _input_y = _down - _up;
 var _move_x = _input_x * move_speed
 var _move_y = _input_y * move_speed
 
-
 if (_move_x != 0) {
     var _box = instance_place(x + _move_x, y, obj_box);
     if (_box != noone) {
@@ -43,4 +42,8 @@ if (_move_y != 0) {
         _move_y = 0;
     }
     y += _move_y;
+}
+
+if(keyboard_check_pressed(ord("B"))){
+	Blink()
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Blink",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Blink",
+  "parent":{
+    "name":"SLEEPOVER.",
+    "path":"SLEEPOVER..yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

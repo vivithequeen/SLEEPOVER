@@ -24,6 +24,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Blink","path":"scripts/Blink/Blink.yy",},},
     {"id":{"name":"bean","path":"sprites/bean/bean.yy",},},
     {"id":{"name":"godot","path":"sprites/godot/godot.yy",},},
   ],
