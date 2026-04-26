@@ -3,7 +3,7 @@ function try_push(inst, dx, dy) {
     var _next = noone;
 
     with (inst) {
-        if (place_meeting(x + dx, y + dy, obj_wall)) {
+        if (wall_at(x + dx, y + dy)) {
             _blocked = true;
         } else {
             _next = instance_place(x + dx, y + dy, obj_box);

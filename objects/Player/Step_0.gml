@@ -18,7 +18,7 @@ if (_move_x != 0) {
         if (!try_push(_box, _move_x, 0)) {
             _move_x = 0;
         }
-    } else if (place_meeting(x + _move_x, y, obj_wall)) {
+    } else if (wall_at(x + _move_x, y)) {
         _move_x = 0;
     }
     x += _move_x;
@@ -30,7 +30,7 @@ if (_move_y != 0) {
         if (!try_push(_box, 0, _move_y)) {
             _move_y = 0;
         }
-    } else if (place_meeting(x, y + _move_y, obj_wall)) {
+    } else if (wall_at(x, y + _move_y)) {
         _move_y = 0;
     }
     y += _move_y;
