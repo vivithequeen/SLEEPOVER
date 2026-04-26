@@ -5,7 +5,7 @@ rem_up_counter = 50
 
 rem_bar_width = 200
 rem_bar_height = 20
-rem_bar_x = 5
+rem_bar_x = 45
 rem_bar_y = 5
 rem_frame = 1
 
