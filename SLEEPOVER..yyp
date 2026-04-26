@@ -19,7 +19,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2024.1400.5.1052",
   },
   "name":"SLEEPOVER.",
   "resources":[
@@ -37,6 +37,9 @@
     {"id":{"name":"button","path":"sprites/button/button.yy",},},
     {"id":{"name":"door","path":"sprites/door/door.yy",},},
     {"id":{"name":"godot","path":"sprites/godot/godot.yy",},},
+    {"id":{"name":"REM_bar","path":"sprites/REM_bar/REM_bar.yy",},},
+    {"id":{"name":"spr_mirror","path":"sprites/spr_mirror/spr_mirror.yy",},},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

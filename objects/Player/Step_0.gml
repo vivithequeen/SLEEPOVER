@@ -1,5 +1,4 @@
-
-move_speed = 4;
+move_speed = 3;
 
 var _right = keyboard_check(vk_right)
 var _left = keyboard_check(vk_left)
