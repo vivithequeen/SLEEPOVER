@@ -6,8 +6,8 @@
   "name":"obj_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"SLEEPOVER.",
-    "path":"SLEEPOVER..yyp",
+    "name":"objects",
+    "path":"folders/objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,9 +33,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"godot",
-    "path":"sprites/godot/godot.yy",
+    "name":"box",
+    "path":"sprites/box/box.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "random",
+  ],
   "visible":true,
 }

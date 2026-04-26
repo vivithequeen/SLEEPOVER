@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
-  "eventList":[],
+  "%Name":"obj_button",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_button",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -26,14 +29,17 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"godot",
-    "path":"sprites/godot/godot.yy",
+    "name":"button",
+    "path":"sprites/button/button.yy",
   },
   "spriteMaskId":{
-    "name":"godot",
-    "path":"sprites/godot/godot.yy",
+    "name":"button",
+    "path":"sprites/button/button.yy",
   },
+  "tags":[
+    "random",
+  ],
   "visible":true,
 }

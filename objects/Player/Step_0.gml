@@ -11,23 +11,13 @@ var _input_y = _down - _up;
 var _move_x = _input_x * move_speed
 var _move_y = _input_y * move_speed
 
-if (_left) {
-	image_xscale = -0.75
-} else if (_right) {
-	image_xscale = 0.75
-}
-
 if (_move_x != 0) {
     var _box = instance_place(x + _move_x, y, obj_box);
     if (_box != noone) {
-        with (_box) {
-            if (!place_meeting(x + _move_x, y, obj_wall)) {
-                x += _move_x;
-            } else {
-                _move_x = 0;
-            }
+        if (!try_push(_box, _move_x, 0)) {
+            _move_x = 0;
         }
-    } else if (place_meeting(x + _move_x, y, obj_wall)) {
+    } else if (wall_at(x + _move_x, y)) {
         _move_x = 0;
     }
     x += _move_x;
@@ -36,16 +26,15 @@ if (_move_x != 0) {
 if (_move_y != 0) {
     var _box = instance_place(x, y + _move_y, obj_box);
     if (_box != noone) {
-        with (_box) {
-            if (!place_meeting(x, y + _move_y, obj_wall)) {
-                y += _move_y;
-            } else {
-                _move_y = 0;
-            }
+        if (!try_push(_box, 0, _move_y)) {
+            _move_y = 0;
         }
-    } else if (place_meeting(x, y + _move_y, obj_wall)) {
+    } else if (wall_at(x, y + _move_y)) {
         _move_y = 0;
     }
     y += _move_y;
-}	
+}
 
+if(keyboard_check_pressed(ord("B"))){
+	Blink()
+}
