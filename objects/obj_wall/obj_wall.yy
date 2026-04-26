@@ -28,12 +28,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"godot",
-    "path":"sprites/godot/godot.yy",
+    "name":"wall",
+    "path":"sprites/wall/wall.yy",
   },
   "spriteMaskId":{
-    "name":"godot",
-    "path":"sprites/godot/godot.yy",
+    "name":"wall",
+    "path":"sprites/wall/wall.yy",
   },
   "visible":true,
 }

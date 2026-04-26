@@ -6,8 +6,8 @@
   "name":"obj_mirror",
   "overriddenProperties":[],
   "parent":{
-    "name":"SLEEPOVER.",
-    "path":"SLEEPOVER..yyp",
+    "name":"objects",
+    "path":"folders/objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,9 +31,6 @@
     "name":"spr_mirror",
     "path":"sprites/spr_mirror/spr_mirror.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_mirror",
-    "path":"sprites/spr_mirror/spr_mirror.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
