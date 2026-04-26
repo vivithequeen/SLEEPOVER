@@ -4,6 +4,7 @@ if (point_distance(x, y, obj_mirror.x, obj_mirror.y) < 200){
 	rem_up_counter -= 1
 	if (rem_up_counter == 0){
 		rem += 2
+		rem_color()
 		if (rem < 5 || rem > 95){
 			game_end()
 		}
@@ -13,6 +14,7 @@ if (point_distance(x, y, obj_mirror.x, obj_mirror.y) < 200){
 	rem_drop_counter -= 1
 	if (rem_drop_counter == 0){
 		rem -= 1
+		rem_color()
 		if (rem < 5 || rem > 95){
 			game_end()
 		}

@@ -37,6 +37,7 @@
     {"id":{"name":"box","path":"sprites/box/box.yy",},},
     {"id":{"name":"button","path":"sprites/button/button.yy",},},
     {"id":{"name":"door","path":"sprites/door/door.yy",},},
+    {"id":{"name":"floor_tile","path":"sprites/floor_tile/floor_tile.yy",},},
     {"id":{"name":"godot","path":"sprites/godot/godot.yy",},},
     {"id":{"name":"REM_bar","path":"sprites/REM_bar/REM_bar.yy",},},
     {"id":{"name":"spr_mirror","path":"sprites/spr_mirror/spr_mirror.yy",},},
